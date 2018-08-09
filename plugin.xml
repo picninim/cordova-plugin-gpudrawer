@@ -29,7 +29,7 @@
     <keywords>cordova,device</keywords>
     <repo>https://github.com/picninim/cordova-plugin-gpudrawer.git</repo>
 
-    <js-module src="www/main.js" name="main">
+    <js-module src="www/gpudrawer.js" name="gpudrawer">
         <clobbers target="CordovaGPUDrawerPlugin" />
     </js-module>
 
