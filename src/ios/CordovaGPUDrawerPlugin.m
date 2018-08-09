@@ -17,11 +17,6 @@
  under the License.
  */
 
-#include <sys/types.h>
-#include <sys/sysctl.h>
-#include "TargetConditionals.h"
-
-#import <Cordova/CDV.h>
 #import "CordovaGPUDrawerPlugin.h"
 
 @implementation CordovaGPUDrawerPlugin 
@@ -29,8 +24,9 @@
 
 }
 
-- (void) draw: (CDVInvokedUrlCommand *) command {
+- (void) draw: (CDVInvokedUrlCommand*)command 
+{
     NSString* drawable = [command.arguments objectAtIndex:0];
-    NSLog(@"%@", drawable)
+    NSLog(@"%@", drawable);
 }
 @end

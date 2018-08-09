@@ -22,14 +22,14 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-gpudrawer"
-    version="2.0.3-dev">
-    <name>Device</name>
+    version="1.0.0">
+    <name>GPUDrawer</name>
     <description>Cordova GPUDrawer Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,device</keywords>
+    <keywords>cordova,GPUDrawer</keywords>
     <repo>https://github.com/picninim/cordova-plugin-gpudrawer.git</repo>
 
-    <js-module src="www/gpudrawer.js" name="gpudrawer">
+    <js-module src="www/CordovaGPUDrawerPlugin.js" name="CordovaGPUDrawerPlugin">
         <clobbers target="CordovaGPUDrawerPlugin" />
     </js-module>
 
@@ -42,7 +42,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/example/CordovaGPUDrawerPlugin.java" target-dir="src/com/example/drawable" />
+        <source-file src="src/android/com/example/CordovaGPUDrawerPlugin.java" target-dir="src/com/example" />
     </platform>
 
     <!-- ios -->

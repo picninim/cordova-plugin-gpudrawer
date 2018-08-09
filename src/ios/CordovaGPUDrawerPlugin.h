@@ -17,14 +17,13 @@
  under the License.
  */
 
-#import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface CDVDevice : CDVPlugin
-{}
+@interface CordovaGPUDrawerPlugin : CDVPlugin{
+}
 
 //Hooks for plugin
 
--(void)draw: (CDVInvokedUrlCommand *) command;
+- (void)draw:(CDVInvokedUrlCommand *)command;
 
 @end
