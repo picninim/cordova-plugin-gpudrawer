@@ -28,5 +28,7 @@
 {
     NSString* drawable = [command.arguments objectAtIndex:0];
     NSLog(@"%@", drawable);
+    CDVPluginResult *result =[CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:drawable ];
+    [self.commandDelgate sendPluginResult:result callbackId: command.callbackId];
 }
 @end

@@ -29,8 +29,8 @@
     <keywords>cordova,GPUDrawer</keywords>
     <repo>https://github.com/picninim/cordova-plugin-gpudrawer.git</repo>
 
-    <js-module src="www/CordovaGPUDrawerPlugin.js" name="CordovaGPUDrawerPlugin">
-        <clobbers target="CordovaGPUDrawerPlugin" />
+    <js-module src="www/cordovaGPUDrawerPlugin.js" name="CordovaGPUDrawerPlugin">
+        <clobbers target="cordovaGPUDrawerPlugin" />
     </js-module>
 
     <!-- android -->
@@ -55,6 +55,12 @@
 
         <header-file src="src/ios/CordovaGPUDrawerPlugin.h" />
         <source-file src="src/ios/CordovaGPUDrawerPlugin.m" />
+    </platform>
+    <!-- browser -->
+    <platform name="browser">
+        <js-module src="src/browser/CordovaGPUDrawerPluginProxy.js" name="CordovaGPUDrawerPluginProxy">
+            <runs />
+        </js-module>
     </platform>
 
 
